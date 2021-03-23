@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ExJpConnect | Get new and used japan vehicles </title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container flex">
+      <h1 class="logo"><span>
+        <a href="/">ExJpConnect</a>
+      </span></h1>
+      <nav>
+        <ul>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="position-relative d-flex flex-column my-3" style="min-height: 100vh; overflow: hidden;">
+    <div class="search-vehicles my-2">
+      <div class="container search-page-container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <div class="left-side-filter">
+              <div class="filter-box">
+                <div class="search-vehicles-form card">
+                  <h2 class="box-header sm">
+                    Filter by
+                    <span class="clear-all m-1">Clear all</span>
+                  </h2>
+                  <form class="grid">
+                    <div class="form-control">
+                      <label class="hidden" for="make"></label>
+                      <select name="make" id="make">
+                        <option value="">All Makes</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                      </select>
+                    </div>
+                    <div class="form-control">
+                      <label class="hidden"  for="model"></label>
+                      <select name="model" id="model">
+                        <option value="">All Models</option>
+                      </select>
+                    </div>
+                    <div class="form-control">
+                      <label class="hidden"  for="minPrice"></label>
+                      <select name="minPrice" id="minPrice">
+                        <option value="">minPrice</option>
+                        <option value="300000">300000</option>
+                        <option value="400000">400000</option>
+                        <option value="500000">500000</option>
+                        <option value="600000">600000</option>
+                        <option value="700000">700000</option>
+                        <option value="800000">800000</option>
+                        <option value="900000">900000</option>
+                        <option value="1000000">1000000</option>
+                        <option value="1100000">1100000</option>
+                      </select>
+                    </div>
+                    <div  class="form-control">
+                      <label class="hidden" for="maxPrice"></label>
+                      <select name="maxPrice" id="maxPrice">
+                        <option value="">maxPrice</option>
+                        <option value="300000">300000</option>
+                        <option value="400000">400000</option>
+                        <option value="500000">500000</option>
+                        <option value="600000">600000</option>
+                        <option value="700000">700000</option>
+                        <option value="800000">800000</option>
+                        <option value="900000">900000</option>
+                        <option value="1000000">1000000</option>
+                        <option value="1100000">1100000</option>
+                      </select>
+                    </div>
+                    <input type="submit" value="Search" class="btn btn-primary">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="main-list">
+              <div class="main-content">
+                <div class="car-list-items">
+                  <div class="list__vehicle-card">
+                    <div class="car-item-row">
+                      <div class="row">
+                        <div class="p-r-o col-lg-4 col-md-12">
+                          <div class="car-image-wrapper">
+                            <div class="img-item">
+                              <div class="img-item-inner" style="background-image: url(images/ford-fiesta-2014-9950.jpg)">
+                              </div>
+                              <span class="image-count">
+                                4
+                                <i class="fas fa-camera ml-2">
+                                </i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                          <div class="car-info">
+                            <h2 class="text-secondary">
+                              <a href="" class="link">ford-fiesta-2014</a>
+                            </h2>
+                            <div class="row row">
+                              <div class="col">
+                                <div class="row">
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/fuel.svg" alt="">
+                                      </span>
+                                      <span>Diesel</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/gearbox.svg" alt="">
+                                      </span>
+                                      <span>Automatic</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/milleage.svg" alt="">
+                                      </span>
+                                      <span>123456km</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/year.svg" alt="">
+                                      </span>
+                                      <span>2008</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="test-right car-offer">
+                                  <div class="car-price">
+                                    <span>
+                                      KSH 1250,000
+                                    </span>
+                                    <div class="details">
+                                      <button class="btn btn-primary">view details</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__vehicle-card">
+                    <div class="car-item-row">
+                      <div class="row">
+                        <div class="p-r-o col-lg-4 col-md-12">
+                          <div class="car-image-wrapper">
+                            <div class="img-item">
+                              <div class="img-item-inner" style="background-image: url(images/mercedes-benz-200-2015-24999.jpg)">
+                              </div>
+                              <span class="image-count">
+                                4
+                                <i class="fas fa-camera ml-2">
+                                </i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                          <div class="car-info">
+                            <h2 class="text-secondary">
+                              <a href="" class="link">mercedes-benz-200</a>
+                            </h2>
+                            <div class="row row">
+                              <div class="col">
+                                <div class="row">
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/fuel.svg" alt="">
+                                      </span>
+                                      <span>Diesel</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/gearbox.svg" alt="">
+                                      </span>
+                                      <span>Automatic</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/milleage.svg" alt="">
+                                      </span>
+                                      <span>123456km</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/year.svg" alt="">
+                                      </span>
+                                      <span>2008</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="test-right car-offer">
+                                  <div class="car-price">
+                                    <span>
+                                      KSH 1250,000
+                                    </span>
+                                    <div class="details">
+                                      <button class="btn btn-primary">view details</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__vehicle-card">
+                    <div class="car-item-row">
+                      <div class="row">
+                        <div class="p-r-o col-lg-4 col-md-12">
+                          <div class="car-image-wrapper">
+                            <div class="img-item">
+                              <div class="img-item-inner" style="background-image: url(images/peugeot-2008.jpg)">
+                              </div>
+                              <span class="image-count">
+                                4
+                                <i class="fas fa-camera ml-2">
+                                </i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                          <div class="car-info">
+                            <h2 class="text-secondary">
+                              <a href="" class="link">peugeot-2008</a>
+                            </h2>
+                            <div class="row row">
+                              <div class="col">
+                                <div class="row">
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/fuel.svg" alt="">
+                                      </span>
+                                      <span>Diesel</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/gearbox.svg" alt="">
+                                      </span>
+                                      <span>Automatic</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/milleage.svg" alt="">
+                                      </span>
+                                      <span>123456km</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/year.svg" alt="">
+                                      </span>
+                                      <span>2008</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="test-right car-offer">
+                                  <div class="car-price">
+                                    <span>
+                                      KSH 1250,000
+                                    </span>
+                                    <div class="details">
+                                      <button class="btn btn-primary">view details</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__vehicle-card">
+                    <div class="car-item-row">
+                      <div class="row">
+                        <div class="p-r-o col-lg-4 col-md-12">
+                          <div class="car-image-wrapper">
+                            <div class="img-item">
+                              <div class="img-item-inner" style="background-image: url(images/renault-clio-2017-13485.jpg)">
+                              </div>
+                              <span class="image-count">
+                                4
+                                <i class="fas fa-camera ml-2">
+                                </i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                          <div class="car-info">
+                            <h2 class="text-secondary">
+                              <a href="" class="link">renault-clio-2017</a>
+                            </h2>
+                            <div class="row row">
+                              <div class="col">
+                                <div class="row">
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/fuel.svg" alt="">
+                                      </span>
+                                      <span>Diesel</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/gearbox.svg" alt="">
+                                      </span>
+                                      <span>Automatic</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/milleage.svg" alt="">
+                                      </span>
+                                      <span>123456km</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/year.svg" alt="">
+                                      </span>
+                                      <span>2008</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="test-right car-offer">
+                                  <div class="car-price">
+                                    <span>
+                                      KSH 1250,000
+                                    </span>
+                                    <div class="details">
+                                      <button class="btn btn-primary">view details</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__vehicle-card">
+                    <div class="car-item-row">
+                      <div class="row">
+                        <div class="p-r-o col-lg-4 col-md-12">
+                          <div class="car-image-wrapper">
+                            <div class="img-item">
+                              <div class="img-item-inner" style="background-image: url(images/bmw-x1-2012-24999.jpg)">
+                              </div>
+                              <span class="image-count">
+                                4
+                                <i class="fas fa-camera ml-2">
+                                </i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                          <div class="car-info">
+                            <h2 class="text-secondary">
+                              <a href="" class="link">bmw-x1-2012</a>
+                            </h2>
+                            <div class="row row">
+                              <div class="col">
+                                <div class="row">
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/fuel.svg" alt="">
+                                      </span>
+                                      <span>Diesel</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/gearbox.svg" alt="">
+                                      </span>
+                                      <span>Automatic</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/milleage.svg" alt="">
+                                      </span>
+                                      <span>123456km</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/year.svg" alt="">
+                                      </span>
+                                      <span>2008</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="test-right car-offer">
+                                  <div class="car-price">
+                                    <span>
+                                      KSH 1250,000
+                                    </span>
+                                    <div class="details">
+                                      <button class="btn btn-primary">view details</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list__vehicle-card">
+                    <div class="car-item-row">
+                      <div class="row">
+                        <div class="p-r-o col-lg-4 col-md-12">
+                          <div class="car-image-wrapper">
+                            <div class="img-item">
+                              <div class="img-item-inner" style="background-image: url(images/volkswagen-tiguan-2007-14299.jpg)">
+                              </div>
+                              <span class="image-count">
+                                4
+                                <i class="fas fa-camera ml-2">
+                                </i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                          <div class="car-info">
+                            <h2 class="text-secondary">
+                              <a href="" class="link">volkswagen-tiguan-2007</a>
+                            </h2>
+                            <div class="row row">
+                              <div class="col">
+                                <div class="row">
+                                  <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/fuel.svg" alt="">
+                                      </span>
+                                      <span>Diesel</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/gearbox.svg" alt="">
+                                      </span>
+                                      <span>Automatic</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/milleage.svg" alt="">
+                                      </span>
+                                      <span>123456km</span>
+                                    </div>
+                                    <div class="car-spec-field">
+                                      <span class="spec-icon mr-2">
+                                        <img src="images/year.svg" alt="">
+                                      </span>
+                                      <span>2008</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="test-right car-offer">
+                                  <div class="car-price">
+                                    <span>
+                                      KSH 1250,000
+                                    </span>
+                                    <div class="details">
+                                      <button class="btn btn-primary">view details</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<footer class="footer bg-dark py-5">
+  <div class="container grid grid-3">
+    <div>
+      <h1>ExJpConnect</h1>
+      <p>Copyright &copy; 2021</p>
+    </div>
+    <nav>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="https://twitter.com/ExJpConnectionse"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.facebook.com/exjpconnect"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

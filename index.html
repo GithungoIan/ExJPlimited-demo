@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ExJpConnect | Get new and used japan vehicles </title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container flex">
+      <h1 class="logo"><span>
+        <a href="/">ExJpConnect</a>
+      </span></h1>
+      <nav>
+        <ul>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- hero section -->
+  <section class="search-vehicle ">
+    <div class="container">
+      <div class="search-vehicle-form card">
+        <h2>Search for your vehicle</h2>
+        <form class="grid">
+          <div class="form-control">
+            <label class="hidden" for="make"></label>
+            <select name="make" id="make">
+              <option value="">All Makes</option>
+              <option value="mazda">Mazda</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Nissan">Nissan</option>
+              <option value="BMW">BMW</option>
+              <option value="Ford">Ford</option>
+              <option value="Volkswagen">Volkswagen</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label class="hidden"  for="model"></label>
+            <select name="model" id="model">
+              <option value="">All Models</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label class="hidden"  for="minPrice"></label>
+            <select name="minPrice" id="minPrice">
+              <option value="">minPrice</option>
+              <option value="300000">300000</option>
+              <option value="400000">400000</option>
+              <option value="500000">500000</option>
+              <option value="600000">600000</option>
+              <option value="700000">700000</option>
+              <option value="800000">800000</option>
+              <option value="900000">900000</option>
+              <option value="1000000">1000000</option>
+              <option value="1100000">1100000</option>
+            </select>
+          </div>
+          <div  class="form-control">
+            <label class="hidden" for="maxPrice"></label>
+            <select name="maxPrice" id="maxPrice">
+              <option value="">maxPrice</option>
+              <option value="300000">300000</option>
+              <option value="400000">400000</option>
+              <option value="500000">500000</option>
+              <option value="600000">600000</option>
+              <option value="700000">700000</option>
+              <option value="800000">800000</option>
+              <option value="900000">900000</option>
+              <option value="1000000">1000000</option>
+              <option value="1100000">1100000</option>
+            </select>
+          </div>
+            <input type="submit" value="Search" class="btn btn-primary">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured vehicles -->
+  <section class="featured-vehicle my-2">
+    <h3 class="lg text-center my-1">
+      Featured Vehicles
+    </h3>
+    <div class="container ">
+      <div class="grid grid-4 text-center my-1 ">
+        <div class="vehicle-card">
+          <a href="/vehicles/">
+            <img src="images/featured-1.jpg" alt="">
+            <div class="grid-info">
+              <div class="featured-name">
+                <h4>2003  Audi a2 </h4>
+              </div>
+              <div class="featured-price">
+                <span>KSH 900000</span>
+                </div>
+              <div class="featured-mileage">
+                <span>Milleage: 12456km</span>
+                </div>
+              <div class="featured-year sm">
+                <span>Year: 2003</span>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="vehicle-card">
+          <a href="/vehicles/">
+            <img src="images/featured-2.jpg" alt="">
+            <div class="grid-info">
+              <div class="featured-name">
+                <h4>2012  BMW  X1</h4>
+              </div>
+              <div class="featured-price">
+                <span>KSH 900000</span>
+                </div>
+              <div class="featured-mileage">
+                <span>Milleage: 12456km</span>
+                </div>
+              <div class="featured-year sm">
+                <span>Year: 2012</span>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="vehicle-card">
+          <a href="/vehicles/">
+            <img src="images/featured-3.jpg" alt="">
+            <div class="grid-info">
+              <div class="featured-name">
+                <h4>2015 smart fortwo passion  </h4>
+              </div>
+              <div class="featured-price">
+                <span>KSH 900000</span>
+                </div>
+              <div class="featured-mileage">
+                <span>Milleage: 12456km</span>
+                </div>
+              <div class="featured-year sm">
+                <span>Year: 2015</span>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="vehicle-card">
+          <a href="/vehicles/">
+            <img src="images/featured-4.jpg" alt="">
+            <div class="grid-info">
+              <div class="featured-name">
+                <h4>2007 volkswagen tiguan</h4>
+              </div>
+              <div class="featured-price">
+                <span>KSH 900000</span>
+                </div>
+              <div class="featured-mileage">
+                <span>Milleage: 12456km</span>
+                </div>
+              <div class="featured-year sm">
+                <span>Year: 2007</span>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="vehicle-card">
+          <a href="/vehicles/">
+            <img src="images/featured-1.jpg" alt="">
+            <div class="grid-info">
+              <div class="featured-name">
+                <h4>2003  Audi a2 </h4>
+              </div>
+              <div class="featured-price">
+                <span>KSH 900000</span>
+                </div>
+              <div class="featured-mileage">
+                <span>Milleage: 12456km</span>
+                </div>
+              <div class="featured-year sm">
+                <span>Year: 2003</span>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="vehicle-card">
+          <a href="/vehicles/">
+            <img src="images/featured-2.jpg" alt="">
+            <div class="grid-info">
+              <div class="featured-name">
+                <h4>2012  BMW  X1</h4>
+              </div>
+              <div class="featured-price">
+                <span>KSH 900000</span>
+                </div>
+              <div class="featured-mileage">
+                <span>Milleage: 12456km</span>
+                </div>
+              <div class="featured-year sm">
+                <span>Year: 2012</span>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="vehicle-card">
+          <a href="/vehicles/">
+            <img src="images/featured-3.jpg" alt="">
+            <div class="grid-info">
+              <div class="featured-name">
+                <h4>2015 smart fortwo passion  </h4>
+              </div>
+              <div class="featured-price">
+                <span>KSH 900000</span>
+                </div>
+              <div class="featured-mileage">
+                <span>Milleage: 12456km</span>
+                </div>
+              <div class="featured-year sm">
+                <span>Year: 2015</span>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="vehicle-card">
+          <a href="/vehicles/">
+            <img src="images/featured-4.jpg" alt="">
+            <div class="grid-info">
+              <div class="featured-name">
+                <h4>2007 volkswagen tiguan</h4>
+              </div>
+              <div class="featured-price">
+                <span>KSH 900000</span>
+                </div>
+              <div class="featured-mileage">
+                <span>Milleage: 12456km</span>
+                </div>
+              <div class="featured-year sm">
+                <span>Year: 2007</span>
+                </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <h3 class="text-center"><span>
+      <a class="text-primary featured-see--more" href="inventory.html">see all cars</a>
+    </span></h3>
+  </section>
+
+  <!-- Service section -->
+  <section class="services">
+    <div class="container">
+      <h2 class="md text-center my-1">
+        Services Offered
+      </h2>
+      <div class="grid grid-3 text-center my-4">
+        <div>
+          <i class="fas ta-server fa-3x"></i>
+          <p>We have quality and asured vehicles </p>
+        </div>
+        <div>
+          <i class="fas ta-server fa-3x"></i>
+          <p>Streamlined vehicle importation process</p>
+        </div>
+        <div>
+          <i class="fas ta-server fa-3x"></i>
+          <p>Vehicle inspection and quality assuarance </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Brands -->
+  <section class="brands">
+    <h2 class="md text-center my-2">
+      Popular Brands
+    </h2>
+    <div class="container flex">
+      <div class="card">
+        <h4>BMW</h4>
+        <img src="images/logos/bmw.png" alt="">
+      </div>
+      <div class="card">
+        <h4>Lexus</h4>
+        <img src="images/logos/lexus.png" alt="">
+      </div>
+      <div class="card">
+        <h4>Mazda</h4>
+        <img src="images/logos/mazda.png" alt="">
+      </div>
+      <div class="card">
+        <h4>Mitsubishi</h4>
+        <img src="images/logos/mitsubishi.png" alt="">
+      </div>
+      <div class="card">
+        <h4>Toyota</h4>
+        <img src="images/logos/toyota.png" alt="">
+      </div>
+      <div class="card">
+        <h4>Volkswagen</h4>
+        <img src="images/logos/volkswagen.png" alt="">
+      </div>
+    </div>
+    <h3 class="text-center m-1"><span>
+      <a class="text-primary featured-see--more" href="/brands">see all brands</a>
+    </span></h3>
+  </section>
+
+  <footer class="footer bg-dark py-5">
+  <div class="container grid grid-3">
+    <div>
+      <h1>ExJpConnect</h1>
+      <p>Copyright &copy; 2021</p>
+    </div>
+    <nav>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="https://twitter.com/ExJpConnections"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.facebook.com/exjpconnect"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
