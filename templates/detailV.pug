@@ -1,0 +1,206 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Detail View 
+    link(rel='stylesheet' href='css/detailV.css')
+    link(rel='stylesheet' href='css/utilities.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' integrity='sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==' crossorigin='anonymous')
+  body
+    header.header
+      nav.nav
+        .container
+          .logo
+          ul(class='nav__links')
+    section.position-relative.d-flex.flex-column
+      // breadcrumbs
+      .main-page-wrapper
+        .breadcrumbs
+          .container
+        // title
+        .listing-top
+          .container
+            .row
+              .col-lg-5
+                .listing-title.p-2 2017 Mazda Demio For Sale
+              .col-lg
+                .listing-price.p-2 KSH 1&nbsp;250&nbsp;000
+        // details
+        .listing-details
+          .container.detail-page-container
+            .row
+              // detail section
+              .col-lg-8.content
+                .listing-content
+                  .listing-gallery
+                    .carousel
+                      button(class='carousel__button carousel__button--left is-hidden')
+                        img(src='images/nav-arrow-left-white.svg' alt='left arrow')
+                      div(class='carousel__track-container')
+                        ul(class='carousel__track')
+                          li(class='carousel__slide current-slide')
+                            img(src='images/slide-1.jpg' alt='Image 1' class='carousel__image')
+                          li(class='carousel__slide ')
+                            img(src='images/slide-2.jpg' alt='Image 2' class='carousel__image')
+                          li(class='carousel__slide ')
+                            img(src='images/slide-3.jpg' alt='Image 3' class='carousel__image')
+                      button(class='carousel__button carousel__button--right')
+                        img(src='images/nav-arrow-right-white.svg' alt='right arrow')
+                      div(class='carousel__nav')
+                        button(class='carousel__indicator current-slide')
+                        button(class='carousel__indicator')
+                        button(class='carousel__indicator')
+                  .listing-info.
+                    .description
+                      .features-subheading
+                        h3.vehicle-description-heading.p-2 Description
+                      .listing-info--description
+                        .description-wrapper
+                          p.vehicles-description.p-2 Fielder hybrid 1500cc is here extremely economic unbelievable fuel economy almost 30kms/litre With steering controls dvd player keyless entry and many more endless extras!!!
+                    .overview
+                      .overview-subheading
+                        h3.vehicle-overview-heading.p-2 Vehicle overview
+                      .listing-info--overview
+                        .overview-wrapper
+                          ul.overview-list
+                            li(class='vehicle-key-info-list__item p-2')
+                              // model year
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  img(src='images/year.svg' alt='')
+                                  // year
+                                div
+                                  span 2013
+                            li(class='vehicle-key-info-list__item p-2')
+                              // Fuel type
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  img(src='images/fuel.svg' alt='')
+                                div
+                                  span Petrol
+                            li(class='vehicle-key-info-list__item p-2')
+                              // Engine size
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  img(src='images/engine-default.svg' alt='')
+                                  // Engine
+                                div
+                                  span 1300 cc
+                            li(class='vehicle-key-info-list__item p-2')
+                              // vehicle transmission
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  img(src='images/gearbox.svg' alt='')
+                                  // transmission
+                                div
+                                  span automatic
+                            li(class='vehicle-key-info-list__item p-2')
+                              // vehicle seats
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  img(src='images/comfort-default.svg' alt='')
+                                  // seats
+                                div
+                                  span 5 seats
+                            li(class='vehicle-key-info-list__item p-2')
+                              // vehicle millage
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  img(src='images/mileage.svg' alt='')
+                                  // mileage
+                                div
+                                  span 13000km
+                    .features
+                      .features-subheading.
+                        h3.vehicle-features-heading.p-2 Vehicle features
+                      .listing-info--features
+                        .features-wrapper
+                          ul.features-list
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span Electric Windows
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span AirBags
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span Cup Holders
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span Electric Mirrors
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span Power Steering
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span AM/FM Radio
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span Air Conditioning
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span Anti-lock Brakes
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span CD Player
+                            li(class='vehicle-key-info-list__item p-2')
+                              .car-spec-field
+                                span.spec-icon.mr-2
+                                  i.fas.fa-check
+                                div
+                                  span Climate Control
+              // contact section
+              .col-lg-4.sidebar
+                .listing-sidebar
+                  div
+                    .view-contact
+                      h5.contact-heading Contact the seller
+                  .listing-contact-form
+                    .contact-form-content
+                      div
+                        form.contact-form
+                          .row
+                            .col-12
+                              input.e-input.m-small(type='text' placeholder='Your Name' value='' name='name')
+                          .row
+                            .col-12
+                              input.e-input.m-small(type='email' placeholder='Your Email' value='' name='email')
+                          .row
+                            .col-12
+                              input.e-input.m-small(type='text' placeholder='Your Mobile Number' value='' name='mobileNumber')
+                          .row
+                            .col-12
+                              textarea.e-input.m-small.m-has-min-height(name='message')
+                          button.b-btn.m-btn-blue(type='submit')
+                            span.button-text Send Message
+    footer.footer
+    script(src='js/carousel.js').
+      

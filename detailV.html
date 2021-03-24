@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail View </title>
+  <link rel="stylesheet" href="css/detailV.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <div class="logo"></div>
+        <ul class="nav__links"></ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="position-relative d-flex flex-column">
+    <!-- breadcrumbs -->
+    <div class="main-page-wrapper">
+      <div class="breadcrumbs">
+        <div class="container"></div>
+      </div>
+      <!-- title -->
+      <div class="listing-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="listing-title p-2">2017 Mazda Demio For Sale</div>
+            </div>
+            <div class="col-lg">
+              <div class="listing-price p-2">KSH 1&nbsp;250&nbsp;000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- details -->
+      <div class="listing-details">
+        <div class="container detail-page-container">
+          <div class="row">
+            <!-- detail section -->
+            <div class="col-lg-8 content">
+              <div class="listing-content">
+                <div class="listing-gallery">
+                  <div class="carousel">
+                    <button class="carousel__button carousel__button--left is-hidden">
+                      <img src="images/nav-arrow-left-white.svg" alt="left arrow">
+                    </button>
+                    <div class="carousel__track-container">
+                      <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                          <img src="images/slide-1.jpg" alt="Image 1" class="carousel__image">
+                        </li>
+                        <li class="carousel__slide ">
+                          <img src="images/slide-2.jpg" alt="Image 2" class="carousel__image">
+                        </li>
+                        <li class="carousel__slide ">
+                          <img src="images/slide-3.jpg" alt="Image 3" class="carousel__image">
+                        </li>
+                      </ul>
+                    </div>
+
+                    <button class="carousel__button carousel__button--right">
+                      <img src="images/nav-arrow-right-white.svg" alt="right arrow">
+                    </button>
+
+                    <div class="carousel__nav">
+                      <button class="carousel__indicator current-slide"></button>
+                      <button class="carousel__indicator"></button>
+                      <button class="carousel__indicator"></button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="listing-info ">
+
+                  <div class="description">
+                    <div class="features-subheading">
+                      <h3 class="vehicle-description-heading p-2">Description</h3>
+                    </div>
+                    <div class="listing-info--description">
+                      <div class="description-wrapper">
+                        <p class="vehicles-description p-2">Fielder hybrid 1500cc is here extremely economic unbelievable fuel economy almost 30kms/litre With steering controls dvd player keyless entry and many more endless extras!!!</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="overview">
+                    <div class="overview-subheading">
+                      <h3 class="vehicle-overview-heading p-2">Vehicle overview</h3>
+                    </div>
+
+                    <div class="listing-info--overview">
+                      <div class="overview-wrapper">
+                        <ul class="overview-list">
+                          <li class="vehicle-key-info-list__item p-2">
+                            <!-- model year -->
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <img src="images/year.svg" alt="">
+                                <!-- year -->
+                              </span>
+                              <div>
+                                <span>2013</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="vehicle-key-info-list__item p-2">
+                            <!-- Fuel type -->
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                              <img src="images/fuel.svg" alt="">
+                              </span>
+                              <div>
+                                <span>Petrol</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="vehicle-key-info-list__item p-2">
+                            <!-- Engine size -->
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <img src="images/engine-default.svg" alt="">
+                                <!-- Engine -->
+                              </span>
+                              <div>
+                                <span>1300 cc</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="vehicle-key-info-list__item p-2">
+                            <!--  vehicle transmission -->
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <img src="images/gearbox.svg" alt="">
+                                <!-- transmission -->
+                              </span>
+                              <div>
+                                <span>automatic</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="vehicle-key-info-list__item p-2">
+                            <!--  vehicle seats -->
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <img src="images/comfort-default.svg" alt="">
+                                <!-- seats -->
+                              </span>
+                              <div>
+                                <span>5 seats</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="vehicle-key-info-list__item p-2">
+                            <!--  vehicle millage -->
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <img src="images/mileage.svg" alt="">
+                                <!-- mileage -->
+                              </span>
+                              <div>
+                                <span>13000km</span>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="features">
+                    <div class="features-subheading ">
+                      <h3 class="vehicle-features-heading p-2">Vehicle features</h3>
+                    </div>
+
+                    <div class="listing-info--features">
+                      <div class="features-wrapper">
+                        <ul class="features-list">
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>Electric Windows</span>
+
+                              </div>
+                            </div>
+                          </li>
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                              <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>AirBags</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                              <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>Cup Holders</span>
+
+                              </div>
+                            </div>
+                          </li>
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>Electric Mirrors</span>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                              <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>Power Steering</span>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>AM/FM Radio</span>
+
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>Air Conditioning</span>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>Anti-lock Brakes</span>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>CD Player</span>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="vehicle-key-info-list__item p-2">
+                            <div class="car-spec-field">
+                              <span class="spec-icon mr-2">
+                                <i class="fas fa-check"></i>
+                              </span>
+                              <div>
+                                <span>Climate Control</span>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!--contact section  -->
+            <div class="col-lg-4 sidebar">
+              <div class="listing-sidebar">
+                <div>
+                  <div class="view-contact">
+                    <h5 class="contact-heading">Contact the seller</h5>
+                  </div>
+                </div>
+                <div class="listing-contact-form">
+                  <div class="contact-form-content">
+                    <div>
+                      <form class="contact-form">
+                        <div class="row">
+                          <div class="col-12">
+                            <input type="text" placeholder="Your Name" class="e-input m-small" value="" name="name">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <input type="email" placeholder="Your Email" class="e-input m-small" value="" name="email">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <input type="text" placeholder="Your Mobile Number" class="e-input m-small" value=""
+                              name="mobileNumber">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <textarea name="message" class="e-input m-small m-has-min-height"></textarea>
+                          </div>
+                        </div>
+                        <button class="b-btn m-btn-blue" type="submit">
+                          <span class="button-text">Send Message</span>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer"></footer>
+  <script src="js/carousel.js">
+
+  </script>
+
+</body>
+
+</html>
