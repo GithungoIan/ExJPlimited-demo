@@ -1,0 +1,239 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous')
+    link(rel='shortcut icon' href='images/favicon.ico')
+    link(rel='stylesheet' href='css/utilities.css')
+    link(rel='stylesheet' href='css/style.css')
+    title ExJpConnect | Get new and used japan vehicles 
+  body
+    .navbar
+      .container.flex
+        h1.logo
+          span
+            a(href='/') ExJpConnect
+        nav
+          ul
+            li
+              a(href='inventory.html') Inventory
+            li
+              a(href='about.html') About us
+            li
+              a(href='contact.html') Contact us
+    // hero section
+    section.search-vehicle.
+      .container
+        .search-vehicle-form.card
+          h2 Search for your vehicle
+          form.grid
+            .form-control
+              label.hidden(for='make')
+              select#make(name='make')
+                option(value='') All Makes
+                option(value='mazda') Mazda
+                option(value='Toyota') Toyota
+                option(value='Nissan') Nissan
+                option(value='BMW') BMW
+                option(value='Ford') Ford
+                option(value='Volkswagen') Volkswagen
+            .form-control
+              label.hidden(for='model')
+              select#model(name='model')
+                option(value='') All Models
+            .form-control
+              label.hidden(for='minPrice')
+              select#minPrice(name='minPrice')
+                option(value='') minPrice
+                option(value='300000') 300000
+                option(value='400000') 400000
+                option(value='500000') 500000
+                option(value='600000') 600000
+                option(value='700000') 700000
+                option(value='800000') 800000
+                option(value='900000') 900000
+                option(value='1000000') 1000000
+                option(value='1100000') 1100000
+            .form-control
+              label.hidden(for='maxPrice')
+              select#maxPrice(name='maxPrice')
+                option(value='') maxPrice
+                option(value='300000') 300000
+                option(value='400000') 400000
+                option(value='500000') 500000
+                option(value='600000') 600000
+                option(value='700000') 700000
+                option(value='800000') 800000
+                option(value='900000') 900000
+                option(value='1000000') 1000000
+                option(value='1100000') 1100000
+            input.btn.btn-primary(type='submit' value='Search')
+    // Featured vehicles
+    section.featured-vehicle.my-2
+      h3.lg.text-center.my-1
+        | Featured Vehicles
+      .container.
+        .grid.grid-4.text-center.my-1.
+          .vehicle-card
+            a(href='/vehicles/')
+              img(src='images/featured-1.jpg' alt='')
+              .grid-info
+                .featured-name
+                  h4 2003  Audi a2 
+                .featured-price
+                  span KSH 900000
+                .featured-mileage
+                  span Milleage: 12456km
+                .featured-year.sm
+                  span Year: 2003
+          .vehicle-card
+            a(href='/vehicles/')
+              img(src='images/featured-2.jpg' alt='')
+              .grid-info
+                .featured-name
+                  h4 2012  BMW  X1
+                .featured-price
+                  span KSH 900000
+                .featured-mileage
+                  span Milleage: 12456km
+                .featured-year.sm
+                  span Year: 2012
+          .vehicle-card
+            a(href='/vehicles/')
+              img(src='images/featured-3.jpg' alt='')
+              .grid-info
+                .featured-name
+                  h4 2015 smart fortwo passion  
+                .featured-price
+                  span KSH 900000
+                .featured-mileage
+                  span Milleage: 12456km
+                .featured-year.sm
+                  span Year: 2015
+          .vehicle-card
+            a(href='/vehicles/')
+              img(src='images/featured-4.jpg' alt='')
+              .grid-info
+                .featured-name
+                  h4 2007 volkswagen tiguan
+                .featured-price
+                  span KSH 900000
+                .featured-mileage
+                  span Milleage: 12456km
+                .featured-year.sm
+                  span Year: 2007
+          .vehicle-card
+            a(href='/vehicles/')
+              img(src='images/featured-1.jpg' alt='')
+              .grid-info
+                .featured-name
+                  h4 2003  Audi a2 
+                .featured-price
+                  span KSH 900000
+                .featured-mileage
+                  span Milleage: 12456km
+                .featured-year.sm
+                  span Year: 2003
+          .vehicle-card
+            a(href='/vehicles/')
+              img(src='images/featured-2.jpg' alt='')
+              .grid-info
+                .featured-name
+                  h4 2012  BMW  X1
+                .featured-price
+                  span KSH 900000
+                .featured-mileage
+                  span Milleage: 12456km
+                .featured-year.sm
+                  span Year: 2012
+          .vehicle-card
+            a(href='/vehicles/')
+              img(src='images/featured-3.jpg' alt='')
+              .grid-info
+                .featured-name
+                  h4 2015 smart fortwo passion  
+                .featured-price
+                  span KSH 900000
+                .featured-mileage
+                  span Milleage: 12456km
+                .featured-year.sm
+                  span Year: 2015
+          .vehicle-card
+            a(href='/vehicles/')
+              img(src='images/featured-4.jpg' alt='')
+              .grid-info
+                .featured-name
+                  h4 2007 volkswagen tiguan
+                .featured-price
+                  span KSH 900000
+                .featured-mileage
+                  span Milleage: 12456km
+                .featured-year.sm
+                  span Year: 2007
+      h3.text-center
+        span
+          a.text-primary.featured-see--more(href='inventory.html') see all cars
+    // Service section
+    section.services
+      .container
+        h2.md.text-center.my-1
+          | Services Offered
+        .grid.grid-3.text-center.my-4
+          div
+            i.fas.ta-server.fa-3x
+            p We have quality and asured vehicles 
+          div
+            i.fas.ta-server.fa-3x
+            p Streamlined vehicle importation process
+          div
+            i.fas.ta-server.fa-3x
+            p Vehicle inspection and quality assuarance 
+    // Featured Brands
+    section.brands
+      h2.md.text-center.my-2
+        | Popular Brands
+      .container.flex
+        .card
+          h4 BMW
+          img(src='images/logos/bmw.png' alt='')
+        .card
+          h4 Lexus
+          img(src='images/logos/lexus.png' alt='')
+        .card
+          h4 Mazda
+          img(src='images/logos/mazda.png' alt='')
+        .card
+          h4 Mitsubishi
+          img(src='images/logos/mitsubishi.png' alt='')
+        .card
+          h4 Toyota
+          img(src='images/logos/toyota.png' alt='')
+        .card
+          h4 Volkswagen
+          img(src='images/logos/volkswagen.png' alt='')
+      h3.text-center.m-1
+        span
+          a.text-primary.featured-see--more(href='/brands') see all brands
+    footer.footer.bg-dark.py-5
+      .container.grid.grid-3
+        div
+          h1 ExJpConnect
+          p Copyright &copy; 2021
+        nav
+          h3 Quick Links
+          ul
+            li
+              a(href='inventory.html') Inventory
+            li
+              a(href='about.html') About us
+            li
+              a(href='contact.html') Contact us
+              .social
+                a(href='https://twitter.com/ExJpConnections')
+                  i.fab.fa-twitter.fa-2x
+                a(href='https://www.facebook.com/exjpconnect')
+                  i.fab.fa-facebook.fa-2x
+                a(href='#')
+                  i.fab.fa-instagram.fa-2x

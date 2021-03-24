@@ -1,0 +1,349 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous')
+    link(rel='shortcut icon' href='images/favicon.ico')
+    link(rel='stylesheet' href='css/utilities.css')
+    link(rel='stylesheet' href='css/style.css')
+    title ExJpConnect | Get new and used japan vehicles 
+  body
+    .navbar
+      .container.flex
+        h1.logo
+          span
+            a(href='/') ExJpConnect
+        nav
+          ul
+            li
+              a(href='inventory.html') Inventory
+            li
+              a(href='about.html') About us
+            li
+              a(href='contact.html') Contact us
+    section.position-relative.d-flex.flex-column.my-3(style='min-height: 100vh; overflow: hidden;')
+      .search-vehicles.my-2
+        .container.search-page-container
+          .row
+            .col-lg-3.col-md-12
+              .left-side-filter
+                .filter-box
+                  .search-vehicles-form.card
+                    h2.box-header.sm
+                      | Filter by
+                      span.clear-all.m-1 Clear all
+                    form.grid
+                      .form-control
+                        label.hidden(for='make')
+                        select#make(name='make')
+                          option(value='') All Makes
+                          option(value='mazda') Mazda
+                          option(value='Toyota') Toyota
+                          option(value='Nissan') Nissan
+                          option(value='BMW') BMW
+                          option(value='Ford') Ford
+                          option(value='Volkswagen') Volkswagen
+                      .form-control
+                        label.hidden(for='model')
+                        select#model(name='model')
+                          option(value='') All Models
+                      .form-control
+                        label.hidden(for='minPrice')
+                        select#minPrice(name='minPrice')
+                          option(value='') minPrice
+                          option(value='300000') 300000
+                          option(value='400000') 400000
+                          option(value='500000') 500000
+                          option(value='600000') 600000
+                          option(value='700000') 700000
+                          option(value='800000') 800000
+                          option(value='900000') 900000
+                          option(value='1000000') 1000000
+                          option(value='1100000') 1100000
+                      .form-control
+                        label.hidden(for='maxPrice')
+                        select#maxPrice(name='maxPrice')
+                          option(value='') maxPrice
+                          option(value='300000') 300000
+                          option(value='400000') 400000
+                          option(value='500000') 500000
+                          option(value='600000') 600000
+                          option(value='700000') 700000
+                          option(value='800000') 800000
+                          option(value='900000') 900000
+                          option(value='1000000') 1000000
+                          option(value='1100000') 1100000
+                      input.btn.btn-primary(type='submit' value='Search')
+            .col-lg-9.col-md-12
+              .main-list
+                .main-content
+                  .car-list-items
+                    div(class='list__vehicle-card')
+                      .car-item-row
+                        .row
+                          .p-r-o.col-lg-4.col-md-12
+                            .car-image-wrapper
+                              .img-item
+                                .img-item-inner(style='background-image: url(images/ford-fiesta-2014-9950.jpg)')
+                                span.image-count
+                                  | 4
+                                  i.fas.fa-camera.ml-2
+                          .col-lg-8.col-md-12
+                            .car-info
+                              h2.text-secondary
+                                a.link(href='') ford-fiesta-2014
+                              .row.row
+                                .col
+                                  .row
+                                    .col-md-6.col-sm-6.col-12
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/fuel.svg' alt='')
+                                        span Diesel
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/gearbox.svg' alt='')
+                                        span Automatic
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/milleage.svg' alt='')
+                                        span 123456km
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/year.svg' alt='')
+                                        span 2008
+                                .col
+                                  .test-right.car-offer
+                                    .car-price
+                                      span
+                                        | KSH 1250,000
+                                      .details
+                                        button.btn.btn-primary view details
+                    div(class='list__vehicle-card')
+                      .car-item-row
+                        .row
+                          .p-r-o.col-lg-4.col-md-12
+                            .car-image-wrapper
+                              .img-item
+                                .img-item-inner(style='background-image: url(images/mercedes-benz-200-2015-24999.jpg)')
+                                span.image-count
+                                  | 4
+                                  i.fas.fa-camera.ml-2
+                          .col-lg-8.col-md-12
+                            .car-info
+                              h2.text-secondary
+                                a.link(href='') mercedes-benz-200
+                              .row.row
+                                .col
+                                  .row
+                                    .col-md-6.col-sm-6.col-12
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/fuel.svg' alt='')
+                                        span Diesel
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/gearbox.svg' alt='')
+                                        span Automatic
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/milleage.svg' alt='')
+                                        span 123456km
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/year.svg' alt='')
+                                        span 2008
+                                .col
+                                  .test-right.car-offer
+                                    .car-price
+                                      span
+                                        | KSH 1250,000
+                                      .details
+                                        button.btn.btn-primary view details
+                    div(class='list__vehicle-card')
+                      .car-item-row
+                        .row
+                          .p-r-o.col-lg-4.col-md-12
+                            .car-image-wrapper
+                              .img-item
+                                .img-item-inner(style='background-image: url(images/peugeot-2008.jpg)')
+                                span.image-count
+                                  | 4
+                                  i.fas.fa-camera.ml-2
+                          .col-lg-8.col-md-12
+                            .car-info
+                              h2.text-secondary
+                                a.link(href='') peugeot-2008
+                              .row.row
+                                .col
+                                  .row
+                                    .col-md-6.col-sm-6.col-12
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/fuel.svg' alt='')
+                                        span Diesel
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/gearbox.svg' alt='')
+                                        span Automatic
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/milleage.svg' alt='')
+                                        span 123456km
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/year.svg' alt='')
+                                        span 2008
+                                .col
+                                  .test-right.car-offer
+                                    .car-price
+                                      span
+                                        | KSH 1250,000
+                                      .details
+                                        button.btn.btn-primary view details
+                    div(class='list__vehicle-card')
+                      .car-item-row
+                        .row
+                          .p-r-o.col-lg-4.col-md-12
+                            .car-image-wrapper
+                              .img-item
+                                .img-item-inner(style='background-image: url(images/renault-clio-2017-13485.jpg)')
+                                span.image-count
+                                  | 4
+                                  i.fas.fa-camera.ml-2
+                          .col-lg-8.col-md-12
+                            .car-info
+                              h2.text-secondary
+                                a.link(href='') renault-clio-2017
+                              .row.row
+                                .col
+                                  .row
+                                    .col-md-6.col-sm-6.col-12
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/fuel.svg' alt='')
+                                        span Diesel
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/gearbox.svg' alt='')
+                                        span Automatic
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/milleage.svg' alt='')
+                                        span 123456km
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/year.svg' alt='')
+                                        span 2008
+                                .col
+                                  .test-right.car-offer
+                                    .car-price
+                                      span
+                                        | KSH 1250,000
+                                      .details
+                                        button.btn.btn-primary view details
+                    div(class='list__vehicle-card')
+                      .car-item-row
+                        .row
+                          .p-r-o.col-lg-4.col-md-12
+                            .car-image-wrapper
+                              .img-item
+                                .img-item-inner(style='background-image: url(images/bmw-x1-2012-24999.jpg)')
+                                span.image-count
+                                  | 4
+                                  i.fas.fa-camera.ml-2
+                          .col-lg-8.col-md-12
+                            .car-info
+                              h2.text-secondary
+                                a.link(href='') bmw-x1-2012
+                              .row.row
+                                .col
+                                  .row
+                                    .col-md-6.col-sm-6.col-12
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/fuel.svg' alt='')
+                                        span Diesel
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/gearbox.svg' alt='')
+                                        span Automatic
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/milleage.svg' alt='')
+                                        span 123456km
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/year.svg' alt='')
+                                        span 2008
+                                .col
+                                  .test-right.car-offer
+                                    .car-price
+                                      span
+                                        | KSH 1250,000
+                                      .details
+                                        button.btn.btn-primary view details
+                    div(class='list__vehicle-card')
+                      .car-item-row
+                        .row
+                          .p-r-o.col-lg-4.col-md-12
+                            .car-image-wrapper
+                              .img-item
+                                .img-item-inner(style='background-image: url(images/volkswagen-tiguan-2007-14299.jpg)')
+                                span.image-count
+                                  | 4
+                                  i.fas.fa-camera.ml-2
+                          .col-lg-8.col-md-12
+                            .car-info
+                              h2.text-secondary
+                                a.link(href='') volkswagen-tiguan-2007
+                              .row.row
+                                .col
+                                  .row
+                                    .col-md-6.col-sm-6.col-12
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/fuel.svg' alt='')
+                                        span Diesel
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/gearbox.svg' alt='')
+                                        span Automatic
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/milleage.svg' alt='')
+                                        span 123456km
+                                      .car-spec-field
+                                        span.spec-icon.mr-2
+                                          img(src='images/year.svg' alt='')
+                                        span 2008
+                                .col
+                                  .test-right.car-offer
+                                    .car-price
+                                      span
+                                        | KSH 1250,000
+                                      .details
+                                        button.btn.btn-primary view details
+    footer.footer.bg-dark.py-5
+      .container.grid.grid-3
+        div
+          h1 ExJpConnect
+          p Copyright &copy; 2021
+        nav
+          h3 Quick Links
+          ul
+            li
+              a(href='inventory.html') Inventory
+            li
+              a(href='about.html') About us
+            li
+              a(href='contact.html') Contact us
+              .social
+                a(href='https://twitter.com/ExJpConnectionse')
+                  i.fab.fa-twitter.fa-2x
+                a(href='https://www.facebook.com/exjpconnect')
+                  i.fab.fa-facebook.fa-2x
+                a(href='#')
+                  i.fab.fa-instagram.fa-2x
